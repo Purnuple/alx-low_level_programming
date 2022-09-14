@@ -4,6 +4,7 @@
  * times_table - print the times table
  * Return: Always 0
  */
+
 void times_table(void)
 {
 	int i = 0;
@@ -18,6 +19,11 @@ void times_table(void)
 			rept = i * b;
 			if (b == 0)
 			{
+				_putchar(48 + rept);
+			}
+			else if (rept < 10)
+			{
+				_putchar(' ');
 				_putchar(48 + rept);
 			}
 			else
